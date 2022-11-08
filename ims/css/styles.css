@@ -1,0 +1,382 @@
+  .mainPage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #736d6d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .mainPage2 {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .loginBox {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid #525151;
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 5px 10px 18px #424040;
+  }
+
+  .loginBoxLeft {
+    background: green;
+    height: 100%;
+    width: 50%;
+    border-radius: 25px 0px 0px 25px;
+    animation-name: loginAnimation;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    text-align: center;
+  }
+
+  .loginBoxRight {
+    background: #eaeaea;
+    height: 100%;
+    width: 50%;
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  input {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E4E9F7;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  td {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  h1 {
+    font-family: 'STIX Two Text', serif;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-family: 'STIX Two Text', serif;
+    font-size: 30px;
+  }
+
+  h3  {
+    font-family: 'STIX Two Text', serif;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 70px !important;
+    height: 20px !important;
+    background: #2e8b57;
+    border: 1px solid #424040;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  @keyframes loginAnimation {
+  0%   {background-color:#102a7d;}
+  25%  {background-color:#145912;}
+  50%  {background-color:#a30d0d;}
+  75%  {background-color:#8d9908;}
+  100%  {background-color:#60127a;}
+}
+
+.whiteText {
+  color: white;
+}
+
+.centered {
+  text-align: center;
+}
+
+.table {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  margin: auto;
+  background: white;
+  border-collapse: collapse;
+  color: #2f2929;
+  box-shadow: 2px 2px 2px #c3c3c3;
+}
+
+/* table, tr {
+  border: 1px solid black;
+  background: #e0dede;
+} */
+
+th {
+  background: #dbe9ff;
+}
+
+.header {
+  top: 2;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(to left, #678895, #171717);
+  width: 100%;
+  height: 40px;
+  z-index: 9;
+  box-shadow: 2px 2px 2px 2px #424040;
+  border-radius: 25px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.headerTab {
+  background: white;
+  color: black;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 5%;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #424040;
+  font-family: 'STIX Two Text', serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.headerTab2 {
+  font-size: 18px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+tr:nth-child(even) {
+  background: white;
+}
+
+.content {
+  //margin-top: 30px;
+  //background: #909090;
+  background: #ffffff
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: .5px solid #716d6d;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  background-color: #909090;
+  border: .5px solid #716d6d;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.HeaderLink {
+  color: white;
+  font-size: 16px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
+}
+
+.buttonSubmit {
+  background: white;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 400px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #424040;
+  font-family: 'STIX Two Text', serif;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer
+}
+
+.buttonSubmit:hover {background: #dcdbdb;}
+
+.button {
+  background: white;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 60px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #424040;
+  font-family: 'STIX Two Text', serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.leftGridButton, .rightGridButton {
+  font-size: 14px !important;
+}
+
+.gridButtonTd {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+.button:hover {background: #dcdbdb;}
+
+.saveButton {
+  background: #11b553;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  width: 60px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px #424040;
+  font-family: 'STIX Two Text', serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.saveButton:hover {background: #0e9142;}
+
+form {
+  padding: 10px 10px 10px 10px;
+  width: flex;
+}
+
+.formDiv {
+  padding: 10px 10px 10px 10px;
+  width: flex;
+}
+
+.formContent {
+  background: #ffffff;
+  box-shadow: 3px 3px 3px #424040;
+  border-radius: 25px;
+  height: auto;
+  margin: auto;
+}
+
+.formContentView {
+  background: #dbdbdb;
+  box-shadow: 3px 3px 3px #424040;
+  border-radius: 25px;
+  height: auto;
+  margin: auto;
+}
+
+.subformContent {
+  background: #cbcbcb;
+  box-shadow: 3px 3px 3px #424040;
+  border-radius: 25px;
+  height: auto;
+  margin: auto;
+  width: 350px;
+  padding: 10px 10px 10px 10px;
+}
+
+label {
+  width: 150px;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+select {
+  width: 170px;
+  background: #E4E9F7;
+}
+
+.subDropdown:hover {background: #a5a5a5;}
+
+.hidden {
+  display: none;
+}
+
+.smallerText {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.expandRight {
+  float: right;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.pageControls {
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+ padding: 0 !important;
+}
+
+.close {
+  opacity: .75 !important;
+}
+
+.chosen {
+  background: #E4E9F7 !important;
+}
+
+.chosen-container {
+  background: #E4E9F7 !important;
+}
+
+.chosen-container-single {
+  background: #E4E9F7 !important;
+}
